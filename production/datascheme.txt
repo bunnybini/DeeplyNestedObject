@@ -1,0 +1,51 @@
+object : Memory of Mango
+
+
+name : string
+type: string
+breed: string
+wasAge: string
+nowAge: string
+isFriendly: boolean
+isPretty: boolean
+
+skill: object
+    hand: string
+    spin: string
+    sit: string
+    lay: string
+    wait: string
+    nose: string
+    gunshot: string
+
+dailyWalk: int
+
+favToy: array
+
+birthday: object
+    year: string
+    date: string
+
+firstTimeMet: object
+    year: string
+    date: string
+    time: string
+
+place: object
+    location: string
+    floor: string
+    store: string 
+
+store: object
+    firstFloor: string
+    secondFloor: string
+    thirdFloor: string
+    fourthFloor: string
+
+familyMembers : array
+specialMoments: array
+responsibilities: array
+
+getFloorStore : function
+shareResponsibilities: function
+specialMomentsTogether: function
