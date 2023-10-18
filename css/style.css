@@ -1,6 +1,6 @@
 body {
   background-color: #5d5436;
-  background-image: url("/Img/background.png");
+  background-image: url("/DeeplyNestedObject/Img/background.png");
   background-position: center center;
   background-repeat: no-repeat, repeat;
   background-size: 100vw;
@@ -33,12 +33,12 @@ body {
 
 @font-face {
   font-family: tittle1_Font;
-  src: url("/font/ChalkboyRegular-vmXe7.otf");
+  src: url("/DeeplyNestedObject/font/ChalkboyRegular-vmXe7.otf");
 }
 
 @font-face {
   font-family: tittle2_Font;
-  src: url("/font/KgTenThousandReasonsAlt-BOrl.ttf");
+  src: url("/DeeplyNestedObject/font/KgTenThousandReasonsAlt-BOrl.ttf");
 }
 
 .title {
@@ -92,145 +92,145 @@ body {
 .day1 {
   grid-area: day1;
   .back {
-    background: url("/Img/mangoimg/1.jpeg");
+    background: url("/DeeplyNestedObject/Img/mangoimg/1.jpeg");
   }
 }
 .day2 {
   grid-area: day2;
   .back {
-    background: url("/Img/mangoimg/2.png");
+    background: url("/DeeplyNestedObject/Img/mangoimg/2.png");
   }
 }
 .day3 {
   grid-area: day3;
   .back {
-    background: url("/Img/mangoimg/3.jpg");
+    background: url("/DeeplyNestedObject/Img/mangoimg/3.jpg");
   }
 }
 .day4 {
   grid-area: day4;
   .back {
-    background: url("/Img/mangoimg/4.jpg");
+    background: url("/DeeplyNestedObject/Img/mangoimg/4.jpg");
   }
 }
 .day5 {
   grid-area: day5;
   .back {
-    background: url("/Img/mangoimg/5.jpg");
+    background: url("/DeeplyNestedObject/Img/mangoimg/5.jpg");
   }
 }
 .day6 {
   grid-area: day6;
   .back {
-    background: url("/Img/mangoimg/6.jpeg");
+    background: url("/DeeplyNestedObject/Img/mangoimg/6.jpeg");
   }
 }
 .day7 {
   grid-area: day7;
   .back {
-    background: url("/Img/mangoimg/7.jpeg");
+    background: url("/DeeplyNestedObject/Img/mangoimg/7.jpeg");
   }
 }
 .day8 {
   grid-area: day8;
   .back {
-    background: url("/Img/mangoimg/8.jpg");
+    background: url("/DeeplyNestedObject/Img/mangoimg/8.jpg");
   }
 }
 .day9 {
   grid-area: day9;
   .back {
-    background: url("/Img/mangoimg/9.jpg");
+    background: url("/DeeplyNestedObject/Img/mangoimg/9.jpg");
   }
 }
 .day10 {
   grid-area: day10;
   .back {
-    background: url("/Img/mangoimg/10.jpg");
+    background: url("/DeeplyNestedObject/Img/mangoimg/10.jpg");
   }
 }
 .day11 {
   grid-area: day11;
   .back {
-    background: url("/Img/mangoimg/11.jpg");
+    background: url("/DeeplyNestedObject/Img/mangoimg/11.jpg");
   }
 }
 .day12 {
   grid-area: day12;
   .back {
-    background: url("/Img/mangoimg/12.jpg");
+    background: url("/DeeplyNestedObject/Img/mangoimg/12.jpg");
   }
 }
 .day13 {
   grid-area: day13;
   .back {
-    background: url("/Img/mangoimg/13.jpg");
+    background: url("/DeeplyNestedObject/Img/mangoimg/13.jpg");
   }
 }
 .day14 {
   grid-area: day14;
   .back {
-    background: url("/Img/mangoimg/14.jpg");
+    background: url("/DeeplyNestedObject/Img/mangoimg/14.jpg");
   }
 }
 .day15 {
   grid-area: day15;
   .back {
-    background: url("/Img/mangoimg/15.jpg");
+    background: url("/DeeplyNestedObject/Img/mangoimg/15.jpg");
   }
 }
 .day16 {
   grid-area: day16;
   .back {
-    background: url("/Img/mangoimg/16.jpg");
+    background: url("/DeeplyNestedObject/Img/mangoimg/16.jpg");
   }
 }
 .day17 {
   grid-area: day17;
   .back {
-    background: url("/Img/mangoimg/17.jpg");
+    background: url("/DeeplyNestedObject/Img/mangoimg/17.jpg");
   }
 }
 .day18 {
   grid-area: day18;
   .back {
-    background: url("/Img/mangoimg/18.jpeg");
+    background: url("/DeeplyNestedObject/Img/mangoimg/18.jpeg");
   }
 }
 .day19 {
   grid-area: day19;
   .back {
-    background: url("/Img/mangoimg/19.jpg");
+    background: url("/DeeplyNestedObject/Img/mangoimg/19.jpg");
   }
 }
 .day20 {
   grid-area: day20;
   .back {
-    background: url("/Img/mangoimg/20.jpg");
+    background: url("/DeeplyNestedObject/Img/mangoimg/20.jpg");
   }
 }
 .day21 {
   grid-area: day21;
   .back {
-    background: url("/Img/mangoimg/21.jpg");
+    background: url("/DeeplyNestedObject/Img/mangoimg/21.jpg");
   }
 }
 .day22 {
   grid-area: day22;
   .back {
-    background: url("/Img/mangoimg/22.jpg");
+    background: url("/DeeplyNestedObject/Img/mangoimg/22.jpg");
   }
 }
 .day23 {
   grid-area: day23;
   .back {
-    background: url("/Img/mangoimg/23.jpg");
+    background: url("/DeeplyNestedObject/Img/mangoimg/23.jpg");
   }
 }
 .day24 {
   grid-area: day24;
   .back {
-    background: url("/Img/mangoimg/24.jpg");
+    background: url("/DeeplyNestedObject/Img/mangoimg/24.jpg");
   }
 }
 /* DOOR STYLES */
