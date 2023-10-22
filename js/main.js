@@ -218,7 +218,7 @@ function clickFront() {
       Name: ${mangoDetails.name}<br>
       Type: ${mangoDetails.type}<br>
       Breed: ${mangoDetails.breed}<br>
-      Age: ${mangoDetails.nowAge}<br>
+      Age: ${mangoDetails.Age}<br>
     `;
   } else {
     mangodetailElement.innerHTML = "";
