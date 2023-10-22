@@ -1,20 +1,13 @@
-// var todaysDate = 27;
+let modal = document.getElementById("modalPopup");
+let modalDailyDate = document.querySelector(".dailyDate");
+let modalDailyTitle = document.querySelector(".dailyTitle");
+let modalDailyContent = document.querySelector(".dailyContent");
 
-// ===  Get the modal popup box + content + close span
+let spanClose = document.querySelector(".close");
+let mangoElement = document.querySelector(".day24");
+let mangodetailElement = document.querySelector(".mangodetail");
 
-var modal = document.getElementById("modalPopup");
-var modalDailyDate = document.querySelector(".dailyDate");
-var modalDailyTitle = document.querySelector(".dailyTitle");
-var modalDailyContent = document.querySelector(".dailyContent");
-var modalDailyTime = document.querySelector(".dailyTime");
-var modalDailyLocation = document.querySelector(".dailyLocation");
-var modalDailyPrice = document.querySelector(".dailyPrice");
-var modalDailyLink = document.querySelector(".dailyLink");
-var spanClose = document.querySelector(".close");
-
-// ===  Array of popup messages for each door
-
-var moreInfo = [
+let moreInfo = [
   {
     date: "1st Janurary 2016",
     title: "First Time meeting Mango",
@@ -180,17 +173,18 @@ var moreInfo = [
     title: "10 27 2015",
     content:
       "On 10/27/2015, a beautiful and precious puppy was born and miraculously came to our house on 01/02/2016. It was a wonderful gift for me as I was entering middle school, marking a fresh start with a new family that was the best gift ever. I could sense that we were destined to share a strong bond. Meeting my best friend brought me immense happiness",
+    details: {
+      name: "Mango",
+      type: "dog",
+      breed: "Bichon Frise",
+      wasAge: "2 months",
+      nowAge: "7 years",
+    },
   },
 ];
 
-// Add a click event listener for the Mango door
-
-// === no hover action if higher than today's date (add class 'no-hover')
-
-function noHover() {
-  var doorNumber = this.innerHTML;
-  var calendarNum = parseInt(doorNumber, 10);
-  this.parentNode.classList.add("no-hover");
+function Hover() {
+  this.parentNode.classList.add("hover");
 }
 
 // === door-front: hover + click events
@@ -198,7 +192,7 @@ function noHover() {
 var doorFronts = document.querySelectorAll(".front");
 
 for (var i = 0; i < doorFronts.length; i++) {
-  doorFronts[i].addEventListener("mouseover", noHover);
+  doorFronts[i].addEventListener("mouseover", Hover);
   doorFronts[i].addEventListener("click", clickFront);
 }
 
@@ -214,48 +208,40 @@ for (var i = 0; i < doorBacks.length; i++) {
 
 function clickFront() {
   var numberClicked = this.innerHTML;
-  var calendarNum = parseInt(numberClicked, 10);
 
   if (numberClicked === "Mango") {
-    // Display the specific content for October 27, 2015
     modalDailyDate.innerHTML = moreInfo[moreInfo.length - 1].date;
     modalDailyTitle.innerHTML = moreInfo[moreInfo.length - 1].title;
     modalDailyContent.innerHTML = moreInfo[moreInfo.length - 1].content;
+
+    var mangoDetails = moreInfo[moreInfo.length - 1].details;
+    mangodetailElement.innerHTML = `
+      Name: ${mangoDetails.name}<br>
+      Type: ${mangoDetails.type}<br>
+      Breed: ${mangoDetails.breed}<br>
+      Was Age: ${mangoDetails.wasAge}<br>
+      Now Age: ${mangoDetails.nowAge}<br>
+    `;
+  } else {
+    mangodetailElement.innerHTML = "";
   }
 
-  // console.log(numberClicked);
-  // console.log(calendarNum);
   this.parentNode.classList.toggle("open");
-  //   if (calendarNum <= todaysDate) {
-  //     this.parentNode.classList.toggle("open");
-
-  //   }
 }
 
 // === door-back: click opens the modal + displays corresponding content
 
 function clickBack() {
-  // find number of corresponding door-front (as back has no innerHTML of its own) //
   var calendarNum = this.previousElementSibling.innerHTML;
-  // -1 from door-front to get correct message array index //
   var calendarNumIndex = calendarNum - 1;
 
   // change modal css to display it //
   modal.style.display = "block";
 
   // put message from array into modal content //
-
   modalDailyDate.innerHTML = moreInfo[calendarNumIndex].date;
   modalDailyTitle.innerHTML = moreInfo[calendarNumIndex].title;
   modalDailyContent.innerHTML = moreInfo[calendarNumIndex].content;
-  modalDailyTime.innerHTML = moreInfo[calendarNumIndex].time;
-  modalDailyLocation.innerHTML = moreInfo[calendarNumIndex].location;
-  modalDailyPrice.innerHTML = moreInfo[calendarNumIndex].price;
-  modalDailyLink.href = moreInfo[calendarNumIndex].linkUrl;
-  modalDailyLink.innerHTML = moreInfo[calendarNumIndex].linkText;
-
-  // can toggle door closed again IF want to: //
-  // this.parentNode.classList.toggle("open");
 }
 
 // === click span (x) to close modal

@@ -254,11 +254,11 @@ body {
   color: #ffffff;
 }
 
-.door.no-hover {
+.door.hover {
   border-color: #344f63;
 }
 
-.door:not(.no-hover):hover {
+.door:not(.hover):hover {
   border: 1.5px dashed #ffffff;
 }
 
@@ -348,6 +348,10 @@ footer p {
 }
 
 .dailyDate {
+  color: #705121;
+}
+
+.mangodetail {
   color: #705121;
 }
 
