@@ -177,8 +177,7 @@ let moreInfo = [
       name: "Mango",
       type: "dog",
       breed: "Bichon Frise",
-      wasAge: "2 months",
-      nowAge: "7 years",
+      Age: "7 years",
     },
   },
 ];
@@ -219,8 +218,7 @@ function clickFront() {
       Name: ${mangoDetails.name}<br>
       Type: ${mangoDetails.type}<br>
       Breed: ${mangoDetails.breed}<br>
-      Was Age: ${mangoDetails.wasAge}<br>
-      Now Age: ${mangoDetails.nowAge}<br>
+      Age: ${mangoDetails.nowAge}<br>
     `;
   } else {
     mangodetailElement.innerHTML = "";
